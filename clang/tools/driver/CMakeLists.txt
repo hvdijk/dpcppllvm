@@ -39,6 +39,8 @@ add_clang_tool(clang
   GENERATE_DRIVER
   )
 
+setup_host_tool(clang CLANG clang_exe clang_Target)
+
 clang_target_link_libraries(clang
   PRIVATE
   clangBasic
